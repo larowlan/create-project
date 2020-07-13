@@ -40,7 +40,7 @@ echo "Next steps:"
 echo ""
 echo "cd $APP_NAME"
 echo "docker-compose ${DOCKER_COMPOSE_ARGS} up -d"
-echo "docker-compose ${DOCKER_COMPOSE_ARGS} exec app bash"
+echo "docker-compose ${DOCKER_COMPOSE_ARGS} run --rm php-cli bash"
 echo "./bin/drush site-install ${APP_NAME}_profile \
   --site-name=$APP_NAME \
   --site-mail=devnull+$APP_NAME@previousnext.com.au \
